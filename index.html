@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="app.js"></script>
+    <div id="quizContainer" class="container">
+        <h2 class="heading" id = "question">Welcome to the Quiz!</h2>
+        <textarea id="answerBox" rows="16" placeholder="Type your answer here..."></textarea>
+        <button id="submit" onclick="submitAnswer()">Submit Answer</button>
+    </div>
+
+    <div id="correctOverlay" class = "container overlay">
+        <h2 class="heading">Correct! 🎉</h2>
+        <button id="next" onclick="nextQuestion()">Next Question</button>
+    </div>
+
+    <div id="wrongOverlay" class="container">
+        <h2 class="heading">Wrong answer...</h2>
+        <button id="next" onclick="nextQuestion()">Next Question</button>
+    </div>
+    <button id="startQuiz" onclick="startQuiz()">Start Quiz</button>
+</body>
+
+</html>

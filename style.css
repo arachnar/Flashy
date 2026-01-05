@@ -1,0 +1,86 @@
+html,
+body {
+    background-color: #0f1939;
+    color: #ffffff;
+    margin: 0;
+    height: 100%;
+}
+
+#startQuiz {
+    background-color: #1efb90;
+    border: none;
+    color: #0f1939;
+    font-size: large;
+    width: 10%;
+    height: 8%;
+    border-radius: 2vh;
+    position: absolute;
+    top: 42vh;
+    left: 45vw;
+}
+
+#startQuiz:hover {
+    transition-duration: 0.3s;
+    background-color: #0f1939;
+    color: #1efb90;
+    border: 1px solid #1efb90;
+    cursor: pointer;
+}
+
+
+#submit {
+    background-color: #0f1939;
+    border: none;
+    color: #1efb90;
+    font-size: large;
+    width: 30%;
+    height: 8%;
+    border-radius: 2vh;
+    margin: 1rem auto 0;
+    transition-duration: 0.1s;
+    display: block;
+}
+
+#submit:hover {
+    height: 10%;
+    width: 32%;
+    cursor: pointer;
+}
+
+.container {
+    background-color: #1efb90;
+    width: 30%;
+    height: 60%;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(35vw, 20vh);
+    display: none;
+    padding: 1%;
+}
+
+.heading {
+    font-size: xx-large;
+    text-align: center;
+}
+
+#answerBox {
+    width: 80%;
+    margin: 1rem auto 0;
+    font-size: large;
+    border-radius: 1vh;
+    border: 0.5vh solid #0f1939;
+    text-align: left;
+    text-wrap-mode: wrap;
+    resize: none;
+    padding: 2%;
+    display: block;
+}
+
+/* ensure buttons inside any .container are centered */
+.container>button {
+    display: block;
+    margin: 1rem auto 0;
+}
