@@ -30,7 +30,6 @@ function startQuiz() {
     setQuestion();
 }
 function submitAnswer() {
-    // get the textarea element at runtime (avoids null if script runs before DOM)
     answerBox = document.getElementById("answerBox");
     if (!answerBox) return console.error("answerBox element not found");
 
